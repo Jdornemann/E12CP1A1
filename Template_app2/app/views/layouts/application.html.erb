@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TemplateApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+
+  </head>
+
+  <body>
+    <%= yield %>
+
+    <!-- Footer -->
+        <footer>
+	        <div class="container">
+	            <div class="row">
+                    <div class="col-sm-7 footer-copyright">
+                    	&copy; Trilli Bi Bootstrap Template by <a href="http://azmind.com">Azmind</a>.
+                    </div>
+                    <div class="col-sm-5 footer-social">
+                    	<a class="ultm ultm-facebook ultm-32 ultm-square ultm-gray-to-color" href=""></a>
+	                	<a class="ultm ultm-dribbble ultm-32 ultm-square ultm-gray-to-color" href=""></a>
+	                    <a class="ultm ultm-twitter ultm-32 ultm-square ultm-gray-to-color" href=""></a>
+	                    <a class="ultm ultm-google-plus-1 ultm-32 ultm-square ultm-gray-to-color" href=""></a>
+	                    <a class="ultm ultm-pinterest ultm-32 ultm-square ultm-gray-to-color" href=""></a>
+                    </div>
+	            </div>
+	        </div>
+        </footer>
+        
+        
+        <!-- MODAL: Main features -->
+        <div class="modal fade" id="modal-features" tabindex="-1" role="dialog" aria-labelledby="modal-features-label" aria-hidden="true">
+        	<div class="modal-dialog">
+        		<div class="modal-content">
+        			<div class="modal-header">
+        				<button type="button" class="close" data-dismiss="modal">
+        					<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+        				</button>
+        				<h4 class="modal-title" id="modal-features-label">Main features</h4>
+        			</div>
+        			<div class="modal-body">
+        				<p><img src="<%= asset_path 'modal/1.jpg' %>" alt=""></p>
+        				<p>
+	                    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+	                    	labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+	                    </p>
+	                    <ul>
+	                    	<li>Easy To Use</li>
+	                    	<li>Awesome Design</li>
+	                    	<li>Cloud Based</li>
+	                    </ul>
+	                    <p>
+	                    	Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea 
+	                    	commodo consequat nostrud tation.
+	                    </p>
+        			</div>
+        			<div class="modal-footer">
+        				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+        
+        <!-- MODAL: More features -->
+        <div class="modal fade" id="modal-more-features" tabindex="-1" role="dialog" aria-labelledby="modal-more-features-label" aria-hidden="true">
+        	<div class="modal-dialog">
+        		<div class="modal-content">
+        			<div class="modal-header">
+        				<button type="button" class="close" data-dismiss="modal">
+        					<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+        				</button>
+        				<h4 class="modal-title" id="modal-more-features-label">More features</h4>
+        			</div>
+        			<div class="modal-body">
+        				<div class="embed-responsive embed-responsive-16by9 video-box">
+							<iframe class="embed-responsive-item" src="//player.vimeo.com/video/84910153?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=e8643e" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						</div>
+        				<p>
+	                    	Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea 
+	                    	commodo consequat nostrud tation.
+	                    </p>
+        				<p>
+	                    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+	                    	labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+	                    </p>
+        			</div>
+        			<div class="modal-footer">
+        				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+        
+        <!-- MODAL: About our team -->
+        <div class="modal fade" id="modal-about-us" tabindex="-1" role="dialog" aria-labelledby="modal-about-us-label" aria-hidden="true">
+        	<div class="modal-dialog">
+        		<div class="modal-content">
+        			<div class="modal-header">
+        				<button type="button" class="close" data-dismiss="modal">
+        					<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+        				</button>
+        				<h4 class="modal-title" id="modal-about-us-label">About our team</h4>
+        			</div>
+        			<div class="modal-body">
+        				<p><img src="<%= asset_path 'modal/2.jpg' %> "alt=""></p>
+        				<p>
+	                    	Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea 
+	                    	commodo consequat nostrud tation.
+	                    </p>
+        				<p>
+	                    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+	                    	labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+	                    </p>
+        			</div>
+        			<div class="modal-footer">
+        				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+  </body>
+</html>
